@@ -39,22 +39,22 @@ Vstup zamítnut
 Bonus bonusu: Program náhodně vygeneruje na jaké tři písmena hesla se bude ptát."""
 
 heslo = "simsalabim"
-#        012345678910
+#        0123456789
 
-znak1 = random.randint(0, len(heslo) - 1) # ty -1 musi byt protoze uzivatel pocita od 1, ale program  od nuly
+znak1 = random.randint(1, len(heslo))
 print(znak1)
 overeni_1 = input(f"Zadej {znak1}. znak hesla: ")
 if overeni_1 != heslo[znak1 - 1]:
     print("Vstup zamítnut")
     exit()
 
-znak2 = random.randint(0, len(heslo) - 1)
+znak2 = random.randint(1, len(heslo))
 overeni_2 = input(f"Zadej {znak2}. znak hesla: ")
 if overeni_2 != heslo[znak2 - 1]:
     print("Vstup zamítnut")
     exit()
 
-znak3 = random.randint(0, len(heslo) - 1)
+znak3 = random.randint(1, len(heslo))
 overeni_3 = input(f"Zadej {znak3}. znak hesla: ")
 if overeni_3 != heslo[znak3 - 1]:
     print("Vstup zamítnut")
