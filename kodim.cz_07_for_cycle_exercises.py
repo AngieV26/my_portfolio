@@ -31,7 +31,7 @@ hesla = [
     "strčprstskrzkrk",
 ]
 for heslo in hesla:
-    if len(heslo) > 7: # 7 protoze pocitame od nuly
+    if len(heslo) > 7:
         print(heslo)
 
 
