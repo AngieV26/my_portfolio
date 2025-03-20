@@ -177,7 +177,7 @@ Nápověda: random.shuffle()"""
 def letter_shuffle(word: str):
     word = list(word)
     slice = word[1:-1]
-    shuffled_part = (random.shuffle(slice)) # zkurv random.shuffle nefunguje na slicnuty seznam, jen na komplet, proto slozite delim slovo a zase lepim dokupy
+    random.shuffle(slice)
     word[1:-1] = slice
     return(', '.join(word))
 
